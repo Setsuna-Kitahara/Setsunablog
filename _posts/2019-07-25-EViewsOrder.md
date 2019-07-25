@@ -4,7 +4,7 @@ Title: EViews Order
 subtitle: 课上讲过的EViews命令
 date: 2019-7-25
 Author: Setsuna Kitahara
-header-img: ../img/EViewsOrder/logo.png
+header-img: img_EViewsOrder/logo.png
 catalog: true
 tags:
     - EViews
@@ -13,7 +13,7 @@ tags:
 
 # EViews Order
 
-![北原雪菜 Setsuna Kitahara](../img/logo.png)
+![北原雪菜 Setsuna Kitahara](img_EViewsOrder/logo.png)
 
 >***Code By Setsuna Kitahara***
 
@@ -39,14 +39,14 @@ tags:
 - 本程序会不提示覆盖现有的数据，因此如果类似于RESID和C这种数据有意义的话请尽快备份
 - 接上一条，如果你觉得需要比较预测结果的话，请按下预测结果上方的**Freeze**按钮
 
-![1563522435404](../img/EViewsOrder/1563522435404.png)
+![1563522435404](img_EViewsOrder/EViewsOrder/1563522435404.png)
 
 - 请务必规范数据命名，具体细节可以因人而异，但至少你得看得懂
 - 接上一条，请避开程序预留的名称，包括但不限于C，RESID等
 
 ## 差分运算
 
-![](../img/EViewsOrder/1563454059261.png)
+![](img_EViewsOrder/EViewsOrder/1563454059261.png)
 
 在主窗口命令窗口打入
 
@@ -67,11 +67,11 @@ tags:
 
 主窗口菜单栏 ~ Quick菜单 ~ Equation Estimation
 
-![1563453604957](../img/EViewsOrder/1563453604957.png)
+![1563453604957](img_EViewsOrder/EViewsOrder/1563453604957.png)
 
 ### 命令输入框
 
-![1563453675839](../img/EViewsOrder/1563453675839.png)
+![1563453675839](img_EViewsOrder/EViewsOrder/1563453675839.png)
 
 `[因变量] [常数] [自变量]`
 
@@ -93,7 +93,7 @@ n即为取前n个变量，如果n为区间，写为 **(-min to -max)**
 在下拉框中选择，一般选择“LS”（最小二乘法）
 ### 结果解读
 
-![1563453765387](../img/EViewsOrder/1563453765387.png)
+![1563453765387](img_EViewsOrder/EViewsOrder/1563453765387.png)
 
 **重点部分将以粗体显示**
 
@@ -121,11 +121,11 @@ n即为取前n个变量，如果n为区间，写为 **(-min to -max)**
 ### 位置
 在回归结果页面上点击**Forecast**按钮
 
-![1563453809446](../img/EViewsOrder/1563453809446.png)
+![1563453809446](img_EViewsOrder/EViewsOrder/1563453809446.png)
 
 ### 预测页面
 
-![1563453841567](../img/EViewsOrder/1563453841567.png)
+![1563453841567](img_EViewsOrder/EViewsOrder/1563453841567.png)
 
 | 名称                                          | 解读|
 |----------------------|-|
@@ -178,13 +178,13 @@ X-12季节调整仅适用于时间频率为**季度**或者**月度**的数据�
 
 点开需要进行该处理的窗口，Proc按钮 ~ Seasonal Adjustment ~ Census X12...
 
-![1563521775070](../img/EViewsOrder/1563521775070.png)
+![1563521775070](img_EViewsOrder/EViewsOrder/1563521775070.png)
 
 ### 对话框中的输出设置
 
 注：以下复选框需要至少勾选一项，最后两个非重点
 
-![1563522621255](../img/EViewsOrder/1563522621255.png)
+![1563522621255](img_EViewsOrder/EViewsOrder/1563522621255.png)
 
 | 名称                             | 解读                                      | 包含变动要素 |
 | -------------------------------- | ----------------------------------------- | ------------ |
@@ -208,11 +208,11 @@ X-12季节调整仅适用于时间频率为**季度**或者**月度**的数据�
 
 然后，打开该序列，Proc按钮 ~ Hodrick-Prescott Filter
 
-![1564038775783](../img/EViewsOrder/1564038775783.png)
+![1564038775783](img_EViewsOrder/EViewsOrder/1564038775783.png)
 
 ### 对话框选项
 
-![1564039048117](../img/EViewsOrder/1564039048117.png)
+![1564039048117](img_EViewsOrder/EViewsOrder/1564039048117.png)
 
 | 名称            | 解读                                        |
 | --------------- | ------------------------------------------- |
