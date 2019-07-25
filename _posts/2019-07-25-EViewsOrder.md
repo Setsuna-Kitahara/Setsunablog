@@ -5,7 +5,9 @@ subtitle:课上讲过的EViews命令
 date:2019-7-25
 Author:Setsuna Kitahara
 header-img:img/EViewsOrder/logo.png
-typora-copy-images-to: ./
+catalog:true
+tags:
+    - EViews
 ---
 
 
