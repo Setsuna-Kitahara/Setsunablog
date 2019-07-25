@@ -1,8 +1,7 @@
 theme: jekyll-theme-slate
 title: Setsunablog
-brief-intro: Blogging as I like
 baseurl: ""
-url: http://blog.family-402.top
+url: "http://blog.family-402.top"
 
 twitter_username: Setsuna51183
 github_username:  Setsuna-Kitahara
@@ -15,3 +14,23 @@ description: "Code by Setsuna Kitahara"
 sidebar: true
 sidebar-about-description: "一个漏网的白学家"
 sidebar-avatar: images/avatar.png
+
+featured-tags: true
+featured-condition-size: 0
+
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true
+
+gems: [jekyll-paginate]
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM 
+
+
