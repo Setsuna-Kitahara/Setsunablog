@@ -15,11 +15,11 @@ tags:
 
 ![北原雪菜 Setsuna Kitahara](../img/logo.png)
 
-***Code By Setsuna Kitahara***
+>***Code By Setsuna Kitahara***
 
-***2019-7-18***
+>***2019-7-18***
 
-***使用软件版本：EViews 7.2***
+>***使用软件版本：EViews 7.2***
 
 ---
 
