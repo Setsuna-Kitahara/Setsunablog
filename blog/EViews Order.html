@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>EViews Order</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+:root { --side-bar-bg-color: #fafafa; --control-text-color: #777; }
+html { font-size: 16px; }
+body { font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: rgb(51, 51, 51); line-height: 1.6; }
+#write { max-width: 860px; margin: 0px auto; padding: 30px 30px 100px; }
+#write > ul:first-child, #write > ol:first-child { margin-top: 30px; }
+a { color: rgb(65, 131, 196); }
+h1, h2, h3, h4, h5, h6 { position: relative; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold; line-height: 1.4; cursor: text; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor { text-decoration: none; }
+h1 tt, h1 code { font-size: inherit; }
+h2 tt, h2 code { font-size: inherit; }
+h3 tt, h3 code { font-size: inherit; }
+h4 tt, h4 code { font-size: inherit; }
+h5 tt, h5 code { font-size: inherit; }
+h6 tt, h6 code { font-size: inherit; }
+h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+h3 { font-size: 1.5em; line-height: 1.43; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1em; }
+h6 { font-size: 1em; color: rgb(119, 119, 119); }
+p, blockquote, ul, ol, dl, table { margin: 0.8em 0px; }
+li > ol, li > ul { margin: 0px; }
+hr { height: 2px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; overflow: hidden; box-sizing: content-box; }
+li p.first { display: inline-block; }
+ul, ol { padding-left: 30px; }
+ul:first-child, ol:first-child { margin-top: 0px; }
+ul:last-child, ol:last-child { margin-bottom: 0px; }
+blockquote { border-left: 4px solid rgb(223, 226, 229); padding: 0px 15px; color: rgb(119, 119, 119); }
+blockquote blockquote { padding-right: 0px; }
+table { padding: 0px; word-break: initial; }
+table tr { border-top: 1px solid rgb(223, 226, 229); margin: 0px; padding: 0px; }
+table tr:nth-child(2n), thead { background-color: rgb(248, 248, 248); }
+table tr th { font-weight: bold; border-width: 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-top-color: rgb(223, 226, 229); border-right-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); border-image: initial; border-bottom-style: initial; border-bottom-color: initial; text-align: left; margin: 0px; padding: 6px 13px; }
+table tr td { border: 1px solid rgb(223, 226, 229); text-align: left; margin: 0px; padding: 6px 13px; }
+table tr th:first-child, table tr td:first-child { margin-top: 0px; }
+table tr th:last-child, table tr td:last-child { margin-bottom: 0px; }
+.CodeMirror-lines { padding-left: 4px; }
+.code-tooltip { box-shadow: rgba(0, 28, 36, 0.3) 0px 1px 1px 0px; border-top: 1px solid rgb(238, 242, 242); }
+.md-fences, code, tt { border: 1px solid rgb(231, 234, 237); background-color: rgb(248, 248, 248); border-radius: 3px; padding: 2px 4px 0px; font-size: 0.9em; }
+code { background-color: rgb(243, 244, 244); padding: 0px 2px; }
+.md-fences { margin-bottom: 15px; margin-top: 15px; padding-top: 8px; padding-bottom: 6px; }
+.md-task-list-item > input { margin-left: -1.3em; }
+@media print {
+  html { font-size: 13px; }
+  table, pre { break-inside: avoid; }
+  pre { overflow-wrap: break-word; }
+}
+.md-fences { background-color: rgb(248, 248, 248); }
+#write pre.md-meta-block { padding: 1rem; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border: 0px; border-radius: 3px; color: rgb(119, 119, 119); margin-top: 0px !important; }
+.mathjax-block > .code-tooltip { bottom: 0.375rem; }
+.md-mathjax-midline { background: rgb(250, 250, 250); }
+#write > h3.md-focus::before { left: -1.5625rem; top: 0.375rem; }
+#write > h4.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h5.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h6.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+.md-image > .md-meta { border-radius: 3px; padding: 2px 0px 0px 4px; font-size: 0.9em; color: inherit; }
+.md-tag { color: rgb(167, 167, 167); opacity: 1; }
+.md-toc { margin-top: 20px; padding-bottom: 20px; }
+.sidebar-tabs { border-bottom: none; }
+#typora-quick-open { border: 1px solid rgb(221, 221, 221); background-color: rgb(248, 248, 248); }
+#typora-quick-open-item { background-color: rgb(250, 250, 250); border-color: rgb(254, 254, 254) rgb(229, 229, 229) rgb(229, 229, 229) rgb(238, 238, 238); border-style: solid; border-width: 1px; }
+.on-focus-mode blockquote { border-left-color: rgba(85, 85, 85, 0.12); }
+header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Arial, sans-serif; }
+.file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state { visibility: visible; }
+.mac-seamless-mode #typora-sidebar { background-color: var(--side-bar-bg-color); }
+.md-lang { color: rgb(180, 101, 77); }
+.html-for-mac .context-menu { --item-hover-bg-color: #E6F0FE; }
+#md-notification .btn { border: 0px; }
+.dropdown-menu .divider { border-color: rgb(229, 229, 229); }
+
+
+</style>
+</head>
+<body class='typora-export os-windows' >
+<div  id='write'  class = 'is-node'><h1><a name="eviews-order" class="md-header-anchor"></a><span>EViews Order</span></h1><p><img src='.\图片1.png' alt='看到这段文字说明你得把压缩包内所有文件解压到同一个文件夹中' referrerPolicy='no-referrer' /></p><p><strong><em><span>Code By Setsuna Kitahara</span></em></strong></p><p><strong><em><span>2019-7-18</span></em></strong></p><p><strong><em><span>使用软件版本：EViews 7.2</span></em></strong></p><div class='md-toc' mdtype='toc'><p class="md-toc-content"><span class="md-toc-item md-toc-h1" data-ref="n307"><a class="md-toc-inner" style="cursor: pointer;" href="#eviews-order">EViews Order</a></span><span class="md-toc-item md-toc-h2" data-ref="n314"><a class="md-toc-inner" style="cursor: pointer;" href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2">写在前面</a></span><span class="md-toc-item md-toc-h2" data-ref="n319"><a class="md-toc-inner" style="cursor: pointer;" href="#%E9%80%9A%E7%94%A8%E7%9A%84%E4%B8%8A%E6%9C%BA%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9">通用的上机注意事项</a></span><span class="md-toc-item md-toc-h2" data-ref="n333"><a class="md-toc-inner" style="cursor: pointer;" href="#%E5%B7%AE%E5%88%86%E8%BF%90%E7%AE%97">差分运算</a></span><span class="md-toc-item md-toc-h2" data-ref="n342"><a class="md-toc-inner" style="cursor: pointer;" href="#%E5%9B%9E%E5%BD%92%E6%96%B9%E7%A8%8B%E6%A8%A1%E5%9E%8B">回归方程模型</a></span><span class="md-toc-item md-toc-h3" data-ref="n343"><a class="md-toc-inner" style="cursor: pointer;" href="#%E4%BD%8D%E7%BD%AE">位置</a></span><span class="md-toc-item md-toc-h3" data-ref="n347"><a class="md-toc-inner" style="cursor: pointer;" href="#%E5%91%BD%E4%BB%A4%E8%BE%93%E5%85%A5%E6%A1%86">命令输入框</a></span><span class="md-toc-item md-toc-h3" data-ref="n357"><a class="md-toc-inner" style="cursor: pointer;" href="#%E4%BC%B0%E8%AE%A1%E6%96%B9%E6%B3%95">估计方法</a></span><span class="md-toc-item md-toc-h3" data-ref="n359"><a class="md-toc-inner" style="cursor: pointer;" href="#%E7%BB%93%E6%9E%9C%E8%A7%A3%E8%AF%BB">结果解读</a></span><span class="md-toc-item md-toc-h2" data-ref="n418"><a class="md-toc-inner" style="cursor: pointer;" href="#%E5%9B%9E%E5%BD%92%E9%A2%84%E6%B5%8B">回归预测</a></span><span class="md-toc-item md-toc-h3" data-ref="n419"><a class="md-toc-inner" style="cursor: pointer;" href="#%E4%BD%8D%E7%BD%AE">位置</a></span><span class="md-toc-item md-toc-h3" data-ref="n422"><a class="md-toc-inner" style="cursor: pointer;" href="#%E9%A2%84%E6%B5%8B%E9%A1%B5%E9%9D%A2">预测页面</a></span><span class="md-toc-item md-toc-h3" data-ref="n446"><a class="md-toc-inner" style="cursor: pointer;" href="#%E9%A2%84%E6%B5%8B%E6%96%B9%E6%B3%95">预测方法</a></span><span class="md-toc-item md-toc-h3" data-ref="n460"><a class="md-toc-inner" style="cursor: pointer;" href="#%E8%BE%93%E5%87%BA">输出</a></span><span class="md-toc-item md-toc-h2" data-ref="n472"><a class="md-toc-inner" style="cursor: pointer;" href="#x-12%E5%AD%A3%E8%8A%82%E8%B0%83%E6%95%B4">X-12季节调整</a></span><span class="md-toc-item md-toc-h3" data-ref="n474"><a class="md-toc-inner" style="cursor: pointer;" href="#%E5%AE%9A%E4%B9%89">定义</a></span><span class="md-toc-item md-toc-h4" data-ref="n475"><a class="md-toc-inner" style="cursor: pointer;" href="#%E5%AD%A3%E8%8A%82%E8%B0%83%E6%95%B4">季节调整</a></span><span class="md-toc-item md-toc-h4" data-ref="n477"><a class="md-toc-inner" style="cursor: pointer;" href="#%E5%9B%9B%E7%A7%8D%E5%8F%98%E5%8A%A8%E8%A6%81%E7%B4%A0">四种变动要素</a></span><span class="md-toc-item md-toc-h3" data-ref="n499"><a class="md-toc-inner" style="cursor: pointer;" href="#%E6%B3%A8%E6%84%8F">注意</a></span><span class="md-toc-item md-toc-h3" data-ref="n502"><a class="md-toc-inner" style="cursor: pointer;" href="#%E4%BD%8D%E7%BD%AE">位置</a></span><span class="md-toc-item md-toc-h3" data-ref="n505"><a class="md-toc-inner" style="cursor: pointer;" href="#%E5%AF%B9%E8%AF%9D%E6%A1%86%E4%B8%AD%E7%9A%84%E8%BE%93%E5%87%BA%E8%AE%BE%E7%BD%AE">对话框中的输出设置</a></span><span class="md-toc-item md-toc-h2" data-ref="n533"><a class="md-toc-inner" style="cursor: pointer;" href="#hp%E6%BB%A4%E6%B3%A2%E5%88%86%E8%A7%A3">HP滤波分解</a></span><span class="md-toc-item md-toc-h3" data-ref="n534"><a class="md-toc-inner" style="cursor: pointer;" href="#%E6%9D%A5%E5%8E%86%E4%BB%A5%E5%8F%8A%E7%94%A8%E9%80%94">来历以及用途</a></span><span class="md-toc-item md-toc-h3" data-ref="n537"><a class="md-toc-inner" style="cursor: pointer;" href="#%E4%BD%8D%E7%BD%AE">位置</a></span><span class="md-toc-item md-toc-h3" data-ref="n541"><a class="md-toc-inner" style="cursor: pointer;" href="#%E5%AF%B9%E8%AF%9D%E6%A1%86%E9%80%89%E9%A1%B9">对话框选项</a></span><span class="md-toc-item md-toc-h2" data-ref="n557"><a class="md-toc-inner" style="cursor: pointer;" href="#%E5%8D%8F%E6%95%B4">协整</a></span><span class="md-toc-item md-toc-h2" data-ref="n563"><a class="md-toc-inner" style="cursor: pointer;" href="#arima">ARIMA</a></span><span class="md-toc-item md-toc-h3" data-ref="n558"><a class="md-toc-inner" style="cursor: pointer;" href="#%E5%AE%9A%E4%B9%89">定义</a></span><span class="md-toc-item md-toc-h3" data-ref="n565"><a class="md-toc-inner" style="cursor: pointer;" href="#%E9%A2%84%E5%A4%84%E7%90%86%EF%BC%9A%E5%B9%B3%E7%A8%B3%E6%80%A7%E6%A3%80%E9%AA%8C%E5%92%8C%E7%BA%AF%E9%9A%8F%E6%9C%BA%E6%80%A7%E6%A3%80%E9%AA%8C">预处理：平稳性检验和纯随机性检验</a></span><span class="md-toc-item md-toc-h3" data-ref="n569"><a class="md-toc-inner" style="cursor: pointer;" href="#%E5%A4%84%E7%90%86%EF%BC%9Aarima+%E7%BB%93%E6%9E%9C%E5%88%86%E6%9E%90">处理：ARIMA+结果分析</a></span><span class="md-toc-item md-toc-h3" data-ref="n572"><a class="md-toc-inner" style="cursor: pointer;" href="#%E9%A2%84%E6%B5%8B%EF%BC%9A%E5%85%AC%E5%BC%8F%E4%BB%A5%E5%8F%8A%E7%BB%93%E6%9E%9C">预测：公式以及结果</a></span></p></div><hr /><h2><a name="%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2" class="md-header-anchor"></a><span>写在前面</span></h2><p><span>没记错的话，这大概是老夫从小到大挂的第一个与计算机相关的课程</span></p><p><span>耻辱，相当的耻辱</span></p><p><span>所以为了能安心过补考，写了这么一个MarkDown</span></p><p><span>肯定没办法面面俱到，但是会尽可能整理相关的资料</span></p><h2><a name="%E9%80%9A%E7%94%A8%E7%9A%84%E4%B8%8A%E6%9C%BA%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9" class="md-header-anchor"></a><span>通用的上机注意事项</span></h2><ul><li><span>本程序不区分大小写，该程序会认为APPLE与apple是同一回事</span></li><li><span>本程序会不提示覆盖现有的数据，因此如果类似于RESID和C这种数据有意义的话请尽快备份</span></li><li><span>接上一条，如果你觉得需要比较预测结果的话，请按下预测结果上方的</span><strong><span>Freeze</span></strong><span>按钮</span></li></ul><p><img src='.\1563522435404.png' alt='1563522435404' referrerPolicy='no-referrer' /></p><ul><li><span>请务必规范数据命名，具体细节可以因人而异，但至少你得看得懂</span></li><li><span>接上一条，请避开程序预留的名称，包括但不限于C，RESID等</span></li></ul><h2><a name="%E5%B7%AE%E5%88%86%E8%BF%90%E7%AE%97" class="md-header-anchor"></a><span>差分运算</span></h2><p><img src='.\1563454059261.png' alt='' referrerPolicy='no-referrer' /></p><p><span>在主窗口命令窗口打入</span></p><p><code>genr [存储目标] = D([目标], [一阶差分次数], [差分阶数])</code></p><p><strong><span>[存储目标]</span></strong><span> = 计算结果存储的变量</span></p><p><strong><span>[目标]</span></strong><span> = 要进行计算的变量</span></p><p><strong><span>[一阶差分次数]</span></strong><span> = 默认为1，若为n，取第n次一阶差分数据</span></p><p><strong><span>[差分阶数]</span></strong><span> = 默认为1，若为n，取n阶差分数据，若一阶差分次数不为0，则先进行一阶差分</span></p><hr /><h2><a name="%E5%9B%9E%E5%BD%92%E6%96%B9%E7%A8%8B%E6%A8%A1%E5%9E%8B" class="md-header-anchor"></a><span>回归方程模型</span></h2><h3><a name="%E4%BD%8D%E7%BD%AE" class="md-header-anchor"></a><span>位置</span></h3><p><em><span>参考PPT：第二讲</span></em></p><p><span>主窗口菜单栏 ~ Quick菜单 ~ Equation Estimation</span></p><p><img src='.\1563453604957.png' alt='1563453604957' referrerPolicy='no-referrer' /></p><h3><a name="%E5%91%BD%E4%BB%A4%E8%BE%93%E5%85%A5%E6%A1%86" class="md-header-anchor"></a><span>命令输入框</span></h3><p><img src='.\1563453675839.png' alt='1563453675839' referrerPolicy='no-referrer' /></p><p><code>[因变量] [常数] [自变量]</code></p><p><strong><span>[因变量]</span></strong><span> 以及 </span><strong><span>[自变量]</span></strong><span> 不解释</span></p><p><span>如果认为回归中包含常数，则增加，一般的，</span><strong><span>[常数]</span></strong><span> = c</span></p><p><span>如果认为前一个（或前几个）变量应该作为后面的自变量，在末尾加入 </span><strong><span>[变量(-n)]</span></strong></p><p><span>n即为取前n个变量，如果n为区间，写为 </span><strong><span>(-min to -max)</span></strong></p><p><em><span>例：(-1 to -4)即为取前1个到前4个变量</span></em></p><p><span>自变量可包含自动序列</span></p><p><em><span>例：log(a)：取变量a的对数作为自变量</span></em></p><h3><a name="%E4%BC%B0%E8%AE%A1%E6%96%B9%E6%B3%95" class="md-header-anchor"></a><span>估计方法</span></h3><p><span>在下拉框中选择，一般选择“LS”（最小二乘法）</span></p><h3><a name="%E7%BB%93%E6%9E%9C%E8%A7%A3%E8%AF%BB" class="md-header-anchor"></a><span>结果解读</span></h3><p><img src='.\1563453765387.png' alt='1563453765387' referrerPolicy='no-referrer' /></p><p><strong><span>重点部分将以粗体显示</span></strong></p><figure><table><thead><tr><th><span>名称</span></th><th><span>翻译/解读</span></th></tr></thead><tbody><tr><td><strong><span>Coeffcient</span></strong></td><td><strong><span>回归系数，对应自变量的系数</span></strong></td></tr><tr><td><span>Std.Error</span></td><td><span>标准差，系数可信度，越小越好</span></td></tr><tr><td><span>t-Statistic</span></td><td><span>t统计量，检验系数为0的假设 </span><em><span>参照：PPT第一讲最后部分</span></em></td></tr><tr><td><strong><span>Prob.</span></strong></td><td><strong><span>概率，系数为0的概率，一般不能超过0.05</span></strong></td></tr><tr><td><strong><span>R-squared</span></strong></td><td><strong><span>R</span><sup><span>2</span></sup><span>统计量，预测回归好坏，越接近1回归越准</span></strong></td></tr><tr><td><span>Adjusted R-squared</span></td><td><span>清除R</span><sup><span>2</span></sup><span>中对模型没有解释力的新增变量后的统计量</span></td></tr><tr><td><span>S.E. of regression</span></td><td><span>回归标准差</span></td></tr><tr><td><span>Sum squared resid</span></td><td><span>残差平方和</span></td></tr><tr><td><span>Log likelihood</span></td><td><span>对数似然函数值</span></td></tr><tr><td><span>F-statistic</span></td><td><span>F统计量，联合检验系数为0的假设（常数截距除外）</span></td></tr><tr><td><span>Prob(F-statistic)</span></td><td><span>F统计量下的P值，联合检验系数为0的概率</span></td></tr><tr><td><span>Mean dependent var</span></td><td><span>因变量均值</span></td></tr><tr><td><span>S.D. dependent var</span></td><td><span>因变量标准差</span></td></tr><tr><td><strong><span>Akaike info criterion</span></strong></td><td><strong><span>AIC值，越小越好</span></strong></td></tr><tr><td><span>Schwarz criterion</span></td><td><span>SIC值，AIC的替代，越小越好</span></td></tr><tr><td><span>Hannan-Quinn criter.</span></td><td><span>HQC值</span></td></tr><tr><td><span>Durbin-Watson stat</span></td><td><span>D-W统计量，衡量残差一阶序列相关性</span></td></tr></tbody></table></figure><hr /><h2><a name="%E5%9B%9E%E5%BD%92%E9%A2%84%E6%B5%8B" class="md-header-anchor"></a><span>回归预测</span></h2><h3><a name="%E4%BD%8D%E7%BD%AE" class="md-header-anchor"></a><span>位置</span></h3><p><span>在回归结果页面上点击</span><strong><span>Forecast</span></strong><span>按钮</span></p><p><img src='.\1563453809446.png' alt='1563453809446' referrerPolicy='no-referrer' /></p><h3><a name="%E9%A2%84%E6%B5%8B%E9%A1%B5%E9%9D%A2" class="md-header-anchor"></a><span>预测页面</span></h3><p><img src='.\1563453841567.png' alt='1563453841567' referrerPolicy='no-referrer' /></p><figure><table><thead><tr><th><span>名称</span></th><th><span>解读</span></th></tr></thead><tbody><tr><td><span>Forecast name</span></td><td><span>预测值存放用的变量名，必填</span></td></tr><tr><td><span>S.E.(optional)</span></td><td><span>预测标准差存放用变量名，按需</span></td></tr><tr><td><span>Method</span></td><td><span>预测方法（见下）</span></td></tr><tr><td><span>Output</span></td><td><span>输出（见下）</span></td></tr><tr><td><span>Forecast sample</span></td><td><span>预测区间</span></td></tr><tr><td><span>Insert actuals for out-of-sample observations</span></td><td><span>用实际值充填预测范围外的数据，若不勾选，此类数值将记为</span><strong><span>NA</span></strong></td></tr></tbody></table></figure><h3><a name="%E9%A2%84%E6%B5%8B%E6%96%B9%E6%B3%95" class="md-header-anchor"></a><span>预测方法</span></h3><figure><table><thead><tr><th><span>名称</span></th><th><span>解读</span></th></tr></thead><tbody><tr><td><span>Dynamic</span></td><td><span>动态：从预测样本的第一期计算多部预测</span></td></tr><tr><td><span>Static</span></td><td><span>静态：利用滞后因变量的实际值计算后一个值预测的结果</span></td></tr><tr><td><span>Structural</span></td><td><span>结构：若勾选，预测ARMA项时将忽略残差项进行预测</span></td></tr></tbody></table></figure><h3><a name="%E8%BE%93%E5%87%BA" class="md-header-anchor"></a><span>输出</span></h3><figure><table><thead><tr><th><span>名称</span></th><th><span>解读</span></th></tr></thead><tbody><tr><td><span>graph</span></td><td><span>若勾选，将显示预测图</span></td></tr><tr><td><span>evaluation</span></td><td><span>若勾选，将显示预测效果统计结果</span></td></tr></tbody></table></figure><hr /><h2><a name="x-12%E5%AD%A3%E8%8A%82%E8%B0%83%E6%95%B4" class="md-header-anchor"></a><span>X-12季节调整</span></h2><p><em><span>参考：PPT第五讲前半部分</span></em></p><h3><a name="%E5%AE%9A%E4%B9%89" class="md-header-anchor"></a><span>定义</span></h3><h4><a name="%E5%AD%A3%E8%8A%82%E8%B0%83%E6%95%B4" class="md-header-anchor"></a><span>季节调整</span></h4><p><span>在原序列中剔除季节波动因素</span></p><h4><a name="%E5%9B%9B%E7%A7%8D%E5%8F%98%E5%8A%A8%E8%A6%81%E7%B4%A0" class="md-header-anchor"></a><span>四种变动要素</span></h4><figure><table><thead><tr><th><span>名称</span></th><th><span>含义</span></th><th><span>简称</span></th></tr></thead><tbody><tr><td><span>长期趋势要素</span></td><td><span>经济时间序列长期的趋势特性</span></td><td><span>T</span></td></tr><tr><td><span>循环要素</span></td><td><span>数年为周期的一种周期性变动</span></td><td><span>C</span></td></tr><tr><td><span>季节要素</span></td><td><span>以12个月或4个季度为周期的周期性影响</span></td><td><span>S</span></td></tr><tr><td><span>不规则要素</span></td><td><span>又称随机因子、残余变动或噪声，其变动无规则可循</span></td><td><span>I</span></td></tr></tbody></table></figure><h3><a name="%E6%B3%A8%E6%84%8F" class="md-header-anchor"></a><span>注意</span></h3><p><span>X-12季节调整仅适用于时间频率为</span><strong><span>季度</span></strong><span>或者</span><strong><span>月度</span></strong><span>的数据，其他频率的数据不适用该调整</span></p><p><span>如果上机时发现该功能不可用，请检查时间频率设置是否有误</span></p><h3><a name="%E4%BD%8D%E7%BD%AE" class="md-header-anchor"></a><span>位置</span></h3><p><span>点开需要进行该处理的窗口，Proc按钮 ~ Seasonal Adjustment ~ Census X12...</span></p><p><img src='.\1563521775070.png' alt='1563521775070' referrerPolicy='no-referrer' /></p><h3><a name="%E5%AF%B9%E8%AF%9D%E6%A1%86%E4%B8%AD%E7%9A%84%E8%BE%93%E5%87%BA%E8%AE%BE%E7%BD%AE" class="md-header-anchor"></a><span>对话框中的输出设置</span></h3><p><span>注：以下复选框需要至少勾选一项，最后两个非重点</span></p><p><img src='.\1563522621255.png' alt='1563522621255' referrerPolicy='no-referrer' /></p><figure><table><thead><tr><th><span>名称</span></th><th><span>解读</span></th><th><span>包含变动要素</span></th></tr></thead><tbody><tr><td><span>Base name</span></td><td><span>输出数据的统一前缀</span></td><td>&nbsp;</td></tr><tr><td><span>Final seasunally adjusted series</span></td><td><span>勾选则输出季节调整后序列，后缀为_SA</span></td><td><span>T/C/I</span></td></tr><tr><td><span>Final seasonal factors</span></td><td><span>勾选则输出最后季节因子，后缀为_SF</span></td><td><span>S</span></td></tr><tr><td><span>Final trend-cycle</span></td><td><span>勾选则输出最后的趋势-循环，后缀为_TC</span></td><td><span>T/C</span></td></tr><tr><td><span>Final irregular component</span></td><td><span>勾选则输出最后的不规则要素分量，后缀为_IR</span></td><td><span>I</span></td></tr></tbody></table></figure><h2><a name="hp%E6%BB%A4%E6%B3%A2%E5%88%86%E8%A7%A3" class="md-header-anchor"></a><span>HP滤波分解</span></h2><h3><a name="%E6%9D%A5%E5%8E%86%E4%BB%A5%E5%8F%8A%E7%94%A8%E9%80%94" class="md-header-anchor"></a><span>来历以及用途</span></h3><p><span>英文全称为</span><strong><span>H</span></strong><span>odrick-</span><strong><span>P</span></strong><span>rescott Filter</span></p><p><span>用于区分季节调整后的趋势数据和循环数据（也就是上一部分提到的TC序列）</span></p><h3><a name="%E4%BD%8D%E7%BD%AE" class="md-header-anchor"></a><span>位置</span></h3><p><span>推荐先进行上上一部分提到的操作，将数据进行X-12季节转换，输出其“趋势-循环”序列</span></p><p><span>然后，打开该序列，Proc按钮 ~ Hodrick-Prescott Filter</span></p><p><img src='.\1564038775783.png' alt='1564038775783' referrerPolicy='no-referrer' /></p><h3><a name="%E5%AF%B9%E8%AF%9D%E6%A1%86%E9%80%89%E9%A1%B9" class="md-header-anchor"></a><span>对话框选项</span></h3><p><img src='.\1564039048117.png' alt='1564039048117' referrerPolicy='no-referrer' /></p><figure><table><thead><tr><th><span>名称</span></th><th><span>解读</span></th></tr></thead><tbody><tr><td><span>Smoothed series</span></td><td><span>输出趋势序列的名称，不写则不输出</span></td></tr><tr><td><span>Cycle series</span></td><td><span>输出循环（波动）序列的名称，不写则不输出</span></td></tr><tr><td><span>Lambda</span></td><td><span class="MathJax_SVG" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.354ex" height="1.994ex" viewBox="0 -755.9 583 858.4" role="img" focusable="false" style="vertical-align: -0.238ex;"><defs><path stroke-width="0" id="E10-MJMATHI-3BB" d="M166 673Q166 685 183 694H202Q292 691 316 644Q322 629 373 486T474 207T524 67Q531 47 537 34T546 15T551 6T555 2T556 -2T550 -11H482Q457 3 450 18T399 152L354 277L340 262Q327 246 293 207T236 141Q211 112 174 69Q123 9 111 -1T83 -12Q47 -12 47 20Q47 37 61 52T199 187Q229 216 266 252T321 306L338 322Q338 323 288 462T234 612Q214 657 183 657Q166 657 166 673Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#E10-MJMATHI-3BB" x="0" y="0"></use></g></svg></span><script type="math/tex">\lambda</script><span>值，一般为系统默认，无需手动指定</span></td></tr></tbody></table></figure><h2><a name="%E5%8D%8F%E6%95%B4" class="md-header-anchor"></a><span>协整</span></h2><p><span>（待补充）</span></p><h2><a name="arima" class="md-header-anchor"></a><span>ARIMA</span></h2><h3><a name="%E5%AE%9A%E4%B9%89" class="md-header-anchor"></a><span>定义</span></h3><p><span>AR：自相关系数</span></p><p><span>MA：偏自相关系数</span></p><p><span>I：差分</span></p><p><span>（待补充）</span></p><h3><a name="%E9%A2%84%E5%A4%84%E7%90%86%EF%BC%9A%E5%B9%B3%E7%A8%B3%E6%80%A7%E6%A3%80%E9%AA%8C%E5%92%8C%E7%BA%AF%E9%9A%8F%E6%9C%BA%E6%80%A7%E6%A3%80%E9%AA%8C" class="md-header-anchor"></a><span>预处理：平稳性检验和纯随机性检验</span></h3><p><span>（待补充）</span></p><h3><a name="%E5%A4%84%E7%90%86%EF%BC%9Aarima+%E7%BB%93%E6%9E%9C%E5%88%86%E6%9E%90" class="md-header-anchor"></a><span>处理：ARIMA+结果分析</span></h3><p><span>（待补充）</span></p><h3><a name="%E9%A2%84%E6%B5%8B%EF%BC%9A%E5%85%AC%E5%BC%8F%E4%BB%A5%E5%8F%8A%E7%BB%93%E6%9E%9C" class="md-header-anchor"></a><span>预测：公式以及结果</span></h3><p><span>（待补充）</span></p></div>
+</body>
+</html>

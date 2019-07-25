@@ -1,1 +1,17 @@
 theme: jekyll-theme-slate
+title: Setsunablog
+brief-intro: Blogging as I like
+baseurl: ""
+url: https://setsuna-kitahara.github.io/Setsunablog/
+
+twitter_username: #Setsuna51183
+github_username:  Setsuna-Kitahara
+email: Setsuna_Kitahara@outlook.com
+
+SEOTitle: Setsunablog
+header-img: image/bg.png
+description: "Code by Setsuna Kitahara"
+
+sidebar: true
+sidebar-about-description: "一个漏网的白学家"
+sidebar-avatar: image/avatar.png
