@@ -1,7 +1,7 @@
 theme: jekyll-theme-slate
 title: Setsunablog
 baseurl: ""
-url: "http://blog.family-402.top"
+url: "https://blog.family-402.top"
 
 twitter_username: Setsuna51183
 github_username:  Setsuna-Kitahara
@@ -33,4 +33,13 @@ highlighter: rouge
 kramdown:
   input: GFM 
 
+friends : [
+  {
+      title: "SetsunaDrive",
+      href: "https://Onedrive.family-402.top"
+  }
+]
 
+
+ga_track_id: 'UA-144585690-1'
+ga_domain: blog.family-402.top
