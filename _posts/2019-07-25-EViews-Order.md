@@ -288,7 +288,7 @@ $$
 | Test type                | 检验方法，一般使用Augmented Dickey-Fuller (ADF)检验          |
 | Test for unit root in    | 检验使用的序列，从上到下：原值、一阶差分、二阶差分           |
 | Include in test equation | 序列是否包含常数项和趋势项，从上到下：常数项、常数项和趋势项、二者皆无 |
-| Lag length               | 步长，一般由Schwarz Info Criterion (SIC)自动判定，最大为13   |
+| Lag length               | 步长，一般由Schwarz Info Criterion (SIC)自动判定，最大由系统指定   |
 
 点击OK之后，可以看到后面的结果，我们可以提取其中的Prob.（P值）来确定是否平稳
 
@@ -302,17 +302,54 @@ $$
 
 主要用于检验相关数据是否为白噪声序列，同时预测ARMA的阶数
 
-（待补充）
+打开目标序列，View按钮 ~ Correlogram
+
+![1567074964941](https://raw.githubusercontent.com/Setsuna-Kitahara/Setsunablog/master/img/EViewsOrder/1567074964941.png)
+
+上面的单选框里选原值，一阶差分或是二阶差分，点OK即可出结果
+
+首先检查相关数据是否为白噪声序列，检查Prob. （P值）这一列，
+
+如果有超过0.05的即可视为白噪声序列，白噪声序列没有意义，一般不用
+
+另外，可以从自相关表和偏自相关表中预测ARMA的阶数
+
+| 自相关系数 | 偏自相关系数 | 对策      |
+| ---------- | ------------ | --------- |
+| 拖尾       | p阶截尾      | AR(p)     |
+| q阶截尾    | 拖尾         | MA(q)     |
+| 拖尾       | 拖尾         | ARMA(p,q) |
 
 ### 处理：ARIMA+结果分析
 
-（待补充）
+如果认为需要差分，则先进行差分
+
+然后，打开命令输入框
+
+![1563453675839](https://raw.githubusercontent.com/Setsuna-Kitahara/Setsunablog/master/img/EViewsOrder/1563453675839.png)
+
+`[目标] [常数] [AR(1) ... AR(p)] [MA(1) ... MA(q)]`
+
+**目标：** 要进行建模的变量名，如果进行了差分，则使用差分后储存的变量
+
+**常数：** 如果你认为之后的结果应该有常数，请加入 *c* 以表示
+
+**AR(1) ... AR(p)：** AR阶数，从1写到p
+
+**MA(1) ... MA(q)：** MA阶数，从1写到q
 
 ### 预测：公式以及结果
 
-（待补充）
+参照之前的回归方程模型这一块的结果解读，如果认为模型合理，可以代入公式
+
+残差项放在RESID中
+
+如果认为模型有待优化，选结果页面上方的Estimate按钮重新设定
+
+**警告：RESID会在每次建模之后重置，请及时保存！！！**
 
 ## 协整
 
 ### 目的/适用范围
 
+（待补充）
