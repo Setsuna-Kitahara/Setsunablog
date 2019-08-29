@@ -225,21 +225,51 @@ X-12季节调整仅适用于时间频率为**季度**或者**月度**的数据�
 | Cycle series    | 输出循环（波动）序列的名称，不写则不输出 |
 | Lambda          | $\lambda$值，一般为系统默认，无需手动指定             |
 
-## 协整
-
-（待补充）
-
 ## ARIMA
 
 ### 定义
 
-AR：自相关系数
+#### AR：自相关系数
 
-MA：偏自相关系数
+由上n项数据（n为阶数）进行预测
 
-I：差分
+只有AR模型的话，预测值的公式将为：
 
-（待补充）
+$$
+y_t=\varphi_1y_{t-1}+\varphi_2y_{t-2}+\cdots+\varphi_py_{t-p}+\varepsilon_t
+$$
+
+$y_t$：预测值（目标） $\varphi$：系数 $\varepsilon_t$：误差项
+
+若为未来的预测，残差项为0
+
+#### MA：偏自相关系数
+
+由上n项数据的残差项（n为阶数）进行预测
+
+只有MA模型的话，预测值的公式将为：
+
+$$
+y_t=\varepsilon_t-\theta_1\varepsilon_{\left(t-1\right)}-\theta_2\varepsilon_{\left(t-2\right)}-\cdots-\theta_q\varepsilon_{\left(t-q\right)}
+$$
+
+$y_t$：预测值（目标） $\varphi$：系数 $\varepsilon_t$：误差项
+
+但是，由于预测将基于残差项，因此只能预测未来n期的数据，(n+1)期以后的数据将等于第n期数据
+
+#### ARMA组合
+
+AR和MA可组合（废话）
+
+组合后，公式将为：
+
+$$
+y_t=\varphi_1y_{t-1}+\varphi_2y_{t-2}+\cdots+\varphi_py_{t-p}+\varepsilon_t-\theta_1\varepsilon_{t-1}-\theta_2\varepsilon_{t-2}-\cdots-\theta_q\varepsilon_{t-q}
+$$
+
+#### I：差分
+
+请按照最前面讲到的差分方法进行差分，之后直接使用差分后的数据进行建模
 
 ### 预处理：平稳性检验和纯随机性检验
 
@@ -252,3 +282,8 @@ I：差分
 ### 预测：公式以及结果
 
 （待补充）
+
+## 协整
+
+### 目的/适用范围
+
